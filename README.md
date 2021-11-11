@@ -16,8 +16,8 @@ pip3 install -r dpss-exp3-VC-BNF/requirement.txt
 ```
 
 ## Data Preparation
-1. Download bzn/mst-male/mst-female corpus from here.
-2. Download pretrained ASR model from here
+1. Download bzn/mst-male/mst-female corpus from here http://10.103.10.112:8000/dataset_3speaker.tar.
+2. Download pretrained ASR model from here http://10.103.10.112:8000/pretrained_model/final.py
 3. move final.pt to ./pretrained_model/asr_model
 
 
