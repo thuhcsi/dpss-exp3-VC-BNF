@@ -20,7 +20,11 @@ pip3 install -r dpss-exp3-VC-BNF/requirement.txt
 2. Download pretrained ASR model from here http://10.103.10.112:8000/pretrained_model/final.pt
 3. move final.pt to ./pretrained_model/asr_model
 
+```
+If get 'Could not find a version for torch==1.9.0+cu111' , see https://jishuin.proginn.com/p/763bfbd5e54b.
 
+'pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html' will solve this problem.
+```
 
 Extract the dataset, and organize your data directories as follows:
 ```bash
