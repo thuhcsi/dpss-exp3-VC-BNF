@@ -1,6 +1,7 @@
 # dpss-exp3-VC-BNF
 Voice Conversion Experiments for THUHCSI Course : &lt;Digital Processing of Speech Signals>
 
+
 ## Set up environment
 
 1. Install sox from http://sox.sourceforge.net/
@@ -24,6 +25,8 @@ pip3 install -r dpss-exp3-VC-BNF/requirement.txt
 If get 'Could not find a version for torch==1.9.0+cu111' , see https://jishuin.proginn.com/p/763bfbd5e54b.
 
 'pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html' will solve this problem.
+
+Or you may need other version of torch. A100 and cuda.11 are used when i run these code.
 ```
 
 Extract the dataset, and organize your data directories as follows:
