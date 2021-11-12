@@ -1,4 +1,4 @@
-# dpss-exp3-VC-PPG
+# dpss-exp3-VC-BNF
 Voice Conversion Experiments for THUHCSI Course : &lt;Digital Processing of Speech Signals>
 
 ## Set up environment
