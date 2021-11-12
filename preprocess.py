@@ -54,11 +54,12 @@ def main():
         if os.path.isfile(os.path.join(args.save_dir, "{}_meta.csv".format(mode))):
             os.remove(os.path.join(args.save_dir, "{}_meta.csv".format(mode)))
     wav_files = []
-    speaker = args.data_dir.split('/')[-1]
+    
     for rootdir, subdir, files in os.walk(args.data_dir):
         for f in files:
             if f.endswith('.wav'):
                 wav_files.append(os.path.join(rootdir, f))
+    
     random.shuffle(wav_files)
 
     print('Set up BNFs extraction network')
@@ -80,6 +81,9 @@ def main():
 
     error=[]
     for i, wav_f in tqdm(enumerate(wav_files)):
+        speaker = wav_f.split('/')[-2]
+        # print(speaker)
+        # exit()
         try:
             wav_arr = load_wav(wav_f)
         except:
