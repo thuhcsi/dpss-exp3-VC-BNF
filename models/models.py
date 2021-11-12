@@ -156,11 +156,11 @@ class BLSTMToManyConversionModel(nn.Module):
         spk_embds =spk_embds.repeat(x.shape[0],1,1)
         
         # add speaker embd to the inputs
-        blstm1_inputs = torch.cat((x,spk_embds),-1)  # give your implementation here
+        blstm1_inputs = _ # give your implementation here
         # pass to the 1st BLSTM layer
         blstm1_outs, _ = self.blstm1(blstm1_inputs)
         # add speaker embd to the outputs of 1st lstm
-        blstm2_inputs = blstm1_outs  # give your implementation here
+        blstm2_inputs = _  # give your implementation here
         # pass to the 2nd BLSTM layer
         blstm2_outs, _ = self.blstm2(blstm2_inputs)
         # project to the output dimension
@@ -187,11 +187,7 @@ class SPKEmbedding(nn.Module):
         # e.g. self.embedding_table = ...
         #from zxt
         
-        self.embedding_table = np.zeros((num_spk,num_spk),dtype=np.float32)
-        for x in range(len(self.embedding_table)):
-            self.embedding_table[x][x]=1
-        self.Linear = nn.Linear(in_features=num_spk,
-                                        out_features=embd_dim)
+        
     def forward(self, spk_inds):
         """
         Feel free to use other input features to extract your speaker embedding and
@@ -201,13 +197,6 @@ class SPKEmbedding(nn.Module):
         """
         # define your inference process below
         # e.g. return self.embedding_table(spk_inds)
-        one_hot=torch.from_numpy(self.embedding_table[spk_inds.cpu()])
-
-        device = torch.device("cuda:0" if next(self.Linear.parameters()).is_cuda else 'cpu')
-        one_hot = one_hot.to(device)
-        spk_embedding = self.Linear(one_hot)
-        return spk_embedding.unsqueeze(0)
-        
         pass
 
 
