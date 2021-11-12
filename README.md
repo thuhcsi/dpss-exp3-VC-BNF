@@ -42,7 +42,7 @@ dataset/
 ### Feature Extraction
 
 ```bash
-# in any-to-one VC task, we use 'slt' as the target speaker.
+
 CUDA_VISIBLE_DEVICES=0 python preprocess.py --data_dir /path/to/dataset/bzn --save_dir /path/to/save_data/bzn/
 ```
 
