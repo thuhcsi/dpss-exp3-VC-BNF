@@ -20,6 +20,7 @@ def main():
     args = parser.parse_args()
     # 0.
     src_wav_arr = load_wav(args.src_wav)
+    src_wav_arr[src_wav_arr>1]=1.
     pre_emphasized_wav = _preemphasize(src_wav_arr)
     # Set up network
     bnf_config = './config/asr_config.yaml'
