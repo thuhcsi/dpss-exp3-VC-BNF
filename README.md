@@ -51,16 +51,16 @@ Your extracted features will be organized as follows:
 bzn/
 ├── dev_meta.csv
 ├── f0s
-│   ├── bzn_008724.npy
+│   ├── bzn_000001.npy
 │   ├── ...
 ├── linears
-│   ├── bzn_008724.npy
+│   ├── bzn_000001.npy
 │   ├── ...
 ├── mels
-│   ├── bzn_008724.npy
+│   ├── bzn_000001.npy
 │   ├── ...
 ├── ppgs
-│   ├── bzn_008724.npy
+│   ├── bzn_000001.npy
 │   ├── ...
 ├── test_meta.csv
 └── train_meta.csv
@@ -99,16 +99,16 @@ Your extracted features will be organized as follows:
 exp3-data-all/
 ├── dev_meta.csv
 ├── f0s
-│   ├── bzn_008724.npy
+│   ├── bzn_000001.npy
 │   ├── ...
 ├── linears
-│   ├── bzn_008724.npy
+│   ├── bzn_000001.npy
 │   ├── ...
 ├── mels
-│   ├── bzn_008724.npy
+│   ├── bzn_000001.npy
 │   ├── ...
 ├── ppgs
-│   ├── bzn_008724.npy
+│   ├── bzn_000001.npy
 │   ├── ...
 ├── test_meta.csv
 └── train_meta.csv
