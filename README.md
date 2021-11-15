@@ -13,7 +13,9 @@ Voice Conversion Experiments for THUHCSI Course : &lt;Digital Processing of Spee
 python3 -m venv /path/to/new/virtual/environment
 source /path/to/new/virtual/environment/bin/activate
 pip3 install -r dpss-exp3-VC-BNF/requirement_torch18.txt or dpss-exp3-VC-BNF/requirement_torch19.txt
+
 requirement_torch18.txt for V100 and cuda11.2, requirement_torch19.txt for A100 and cuda11.2
+
 or you may need to setup your own environment depends on GPU and cuda you have.
 ```
 
