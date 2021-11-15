@@ -12,8 +12,9 @@ Voice Conversion Experiments for THUHCSI Course : &lt;Digital Processing of Spee
 ```bash
 python3 -m venv /path/to/new/virtual/environment
 source /path/to/new/virtual/environment/bin/activate
-pip3 install -r dpss-exp3-VC-BNF/requirement.txt
-
+pip3 install -r dpss-exp3-VC-BNF/requirement_torch18.txt or dpss-exp3-VC-BNF/requirement_torch19.txt
+requirement_torch18.txt for V100 and cuda11.2, requirement_torch19.txt for A100 and cuda11.2
+or you may need to setup your own environment depends on GPU and cuda you have.
 ```
 
 ## Data Preparation
@@ -26,7 +27,6 @@ If get 'Could not find a version for torch==1.9.0+cu111' , see https://jishuin.p
 
 'pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html' will solve this problem.
 
-Or you may need other version of torch. A100 and cuda.11 are used when i run these code.
 ```
 
 Extract the dataset, and organize your data directories as follows:
