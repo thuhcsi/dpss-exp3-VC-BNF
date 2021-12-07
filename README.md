@@ -92,7 +92,7 @@ CUDA_VISIBLE_DEVICES=0 python inference_to_one.py --src_wav /path/to/source/xx.w
 ### Feature Extraction
 
 ```bash
-# in any-to-many VC task, we use all the above 6 speakers as the target speaker set.
+# in any-to-many VC task, we use all the above 3 speakers as the target speaker set.
 CUDA_VISIBLE_DEVICES=0 python preprocess.py --data_dir /path/to/dataset/ --save_dir /path/to/save_data/exp3-data-all
 ```
 
@@ -131,7 +131,7 @@ python train_to_many.py --model_dir ./exps/model_dir_to_many --test_dir ./exps/t
 ### Inference
 
 ```bash
-# here for inference, we use 'slt' as the target speaker. you can change the tgt_spk argument to any of the above 6 speakers. 
+# here for inference, we use 'slt' as the target speaker. you can change the tgt_spk argument to any of the above 3 speakers. 
 CUDA_VISIBLE_DEVICES=0 python inference_to_many.py --src_wav /path/to/source/*.wav --tgt_spk bzn/mst-female/mst-male --ckpt ./model_dir/bnf-vc-to-many-49.pt --save_dir ./test_dir/
 ```
 
