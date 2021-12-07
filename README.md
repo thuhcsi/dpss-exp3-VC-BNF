@@ -20,8 +20,8 @@ or you may need to setup your own environment depends on GPU and cuda you have.
 ```
 
 ## Data Preparation
-1. Download bzn/mst-male/mst-female corpus from here http://10.103.10.113:8080/sub_dataset.tar
-2. Download pretrained ASR model from here http://10.103.10.113:8080/pretrained_model/final.pt
+1. Download bzn/mst-male/mst-female corpus from here http://10.103.10.112:8080/sub_dataset.tar
+2. Download pretrained ASR model from here http://10.103.10.112:8080/pretrained_model/final.pt
 3. move final.pt to ./pretrained_model/asr_model
 
 ```
