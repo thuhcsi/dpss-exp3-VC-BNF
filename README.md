@@ -4,9 +4,9 @@ Voice Conversion Experiments for THUHCSI Course : &lt;Digital Processing of Spee
 
 ## Set up environment
 
-1. Install sox from http://sox.sourceforge.net/
+1. Install sox from http://sox.sourceforge.net/ or apt install sox
 
-2. Install ffmpeg from https://www.ffmpeg.org/download.html#build-linux or apt-get install ffmpeg
+2. Install ffmpeg from https://www.ffmpeg.org/download.html#build-linux or apt install FFmpeg
 
 3. Set up python environment through:
 ```bash
