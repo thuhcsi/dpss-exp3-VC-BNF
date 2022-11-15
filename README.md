@@ -18,7 +18,7 @@ requirement_torch18.txt for V100 and cuda11.2, requirement_torch19.txt for A100 
 
 or you may need to setup your own environment depends on GPU and cuda you have.
 ```
-We recommend that you use pytorch 1.9.0 and the corresponding cuda version to avoid bug.
+We recommend that you use pytorch 1.9.0 with the corresponding cuda version to avoid bug.
 ## Data Preparation
 1. Download bzn/mst-male/mst-female corpus from here http://10.103.10.113:8080/sub_dataset.tar
 2. Download pretrained ASR model from here http://10.103.10.113:8080/pretrained_model/final.pt
