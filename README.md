@@ -20,8 +20,8 @@ or you may need to setup your own environment depends on GPU and cuda you have.
 ```
 We recommend that you use pytorch 1.9.0 and the corresponding cuda version to avoid bug.
 ## Data Preparation
-1. Download bzn/mst-male/mst-female corpus from here http://10.103.10.112:8080/sub_dataset.tar
-2. Download pretrained ASR model from here http://10.103.10.112:8080/pretrained_model/final.pt
+1. Download bzn/mst-male/mst-female corpus from here http://10.103.10.113:8080/sub_dataset.tar
+2. Download pretrained ASR model from here http://10.103.10.113:8080/pretrained_model/final.pt
 3. move final.pt to ./pretrained_model/asr_model
 4. you can find all the file mentioned above from https://cloud.tsinghua.edu.cn/d/0edf01d65a194ec9aceb/
 
