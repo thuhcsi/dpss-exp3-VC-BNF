@@ -12,15 +12,14 @@ Voice Conversion Experiments for THUHCSI Course : &lt;Digital Processing of Spee
 ```bash
 python3 -m venv /path/to/new/virtual/environment
 source /path/to/new/virtual/environment/bin/activate
-pip3 install -r dpss-exp3-VC-BNF/requirement_torch18.txt or dpss-exp3-VC-BNF/requirement_torch19.txt
-
+pip3 install -r dpss-exp3-VC-BNF/requirement_torch19.txt
+# or you can use this if you prefer torch1.8 version
+pip3 install -r dpss-exp3-VC-BNF/requirement_torch18.txt
 ```
-requirement_torch18.txt for pytorch 1.8.0 and cuda 11.2, requirement_torch19.txt for torch 1.9.0 and cuda 11.2,
-or you may need to setup your own environment depends on cuda you have.
-
+Tips: You can also setup your own environment depends on cuda you have.
 We recommend that you use pytorch 1.9.0 with the corresponding cuda version to avoid bug.
 ## Data Preparation
-1. Download bzn/mst-male/mst-female corpus from here http://10.103.10.113:8080/sub_dataset.tar (Please use https://vpn.sz.tsinghua.edu.cn/)
+1. Download bzn/mst-male/mst-female corpus from here https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/files/?p=%2Fsub_dataset.tar
 2. Extract the dataset, and organize your data directories as follows:
 ```bash
 dataset/
@@ -28,11 +27,8 @@ dataset/
 ├── mst-male
 ├── bzn
 ```
-3. Download pretrained ASR model from here http://10.103.10.113:8080/pretrained_model/final.pt (Please use https://vpn.sz.tsinghua.edu.cn/)
+3. Download pretrained ASR model from here https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/files/?p=%2Ffinal.pt
 4. Move final.pt to ./pretrained_model/asr_model
-
-Tips: You can also find all the files mentioned above from https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/
-
 
 
 
