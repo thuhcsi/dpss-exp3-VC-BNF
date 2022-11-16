@@ -31,7 +31,7 @@ dataset/
 3. Download pretrained ASR model from here http://10.103.10.113:8080/pretrained_model/final.pt
 4. Move final.pt to ./pretrained_model/asr_model
 
-Tips: You can also find all the file mentioned above from https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/
+Tips: You can also find all the files mentioned above from https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/
 
 
 
@@ -44,10 +44,16 @@ Tips: You can also find all the file mentioned above from https://cloud.tsinghua
 
 CUDA_VISIBLE_DEVICES=0 python preprocess.py --data_dir /path/to/dataset/bzn --save_dir /path/to/save_data/bzn/
 
-If get 'Could not find a version for torch==1.9.0+cu111' , see https://jishuin.proginn.com/p/763bfbd5e54b.
+```
+
+Tips: If you get 'Could not find a version for torch==1.9.0+cu111' , see https://jishuin.proginn.com/p/763bfbd5e54b. 
+
+```bash
 
 'pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html' will solve this problem.
+
 ```
+
 
 Your extracted features will be organized as follows:
 ```bash
