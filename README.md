@@ -46,15 +46,6 @@ CUDA_VISIBLE_DEVICES=0 python preprocess.py --data_dir /path/to/dataset/bzn --sa
 
 ```
 
-Tips: If you get 'Could not find a version for torch==1.9.0+cu111' , see https://jishuin.proginn.com/p/763bfbd5e54b. 
-
-```bash
-
-'pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html' will solve this problem.
-
-```
-
-
 Your extracted features will be organized as follows:
 ```bash
 bzn/
@@ -73,6 +64,15 @@ bzn/
 │   ├── ...
 ├── test_meta.csv
 └── train_meta.csv
+```
+
+Tips: If you get 'Could not find a version for torch==1.9.0+cu111', run the following script to solve the problem. More details please refer to: https://jishuin.proginn.com/p/763bfbd5e54b.
+
+
+```bash
+
+pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+
 ```
 
 ### Train
