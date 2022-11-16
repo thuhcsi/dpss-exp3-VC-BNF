@@ -24,7 +24,6 @@ We recommend that you use pytorch 1.9.0 with the corresponding cuda version to a
 2. Download pretrained ASR model from here http://10.103.10.113:8080/pretrained_model/final.pt
 3. move final.pt to ./pretrained_model/asr_model
 4. you can find all the file mentioned above from https://cloud.tsinghua.edu.cn/d/0edf01d65a194ec9aceb/
-
 ```
 If get 'Could not find a version for torch==1.9.0+cu111' , see https://jishuin.proginn.com/p/763bfbd5e54b.
 
