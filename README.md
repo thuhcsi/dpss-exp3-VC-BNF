@@ -22,8 +22,8 @@ We recommend that you use pytorch 1.9.0 with the corresponding cuda version to a
 ## Data Preparation
 1. Download bzn/mst-male/mst-female corpus from here http://10.103.10.113:8080/sub_dataset.tar
 2. Download pretrained ASR model from here http://10.103.10.113:8080/pretrained_model/final.pt
-3. move final.pt to ./pretrained_model/asr_model
-4. you can find all the file mentioned above from https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/
+3. Move final.pt to ./pretrained_model/asr_model
+4. You can find all the file mentioned above from https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/
 ```
 If get 'Could not find a version for torch==1.9.0+cu111' , see https://jishuin.proginn.com/p/763bfbd5e54b.
 
@@ -70,12 +70,12 @@ bzn/
 
 ### Train
 
-if you have GPU (one typical GPU is enough, nearly 1s/batch):
+If you have GPU (one typical GPU is enough, nearly 1s/batch):
 ```bash
 CUDA_VISIBLE_DEVICES=0 python train_to_one.py --model_dir ./exps/model_dir_to_bzn --test_dir ./exps/test_dir_to_bzn --data_dir /path/to/save_data/bzn/
 ```
 
-if you have no GPU (nearly 5s/batch):
+If you have no GPU (nearly 5s/batch):
 
 ```bash
 python train_to_one.py --model_dir ./exps/model_dir_to_bzn --test_dir ./exps/test_dir_to_bzn --data_dir /path/to/save_data/bzn/
@@ -92,7 +92,7 @@ CUDA_VISIBLE_DEVICES=0 python inference_to_one.py --src_wav /path/to/source/xx.w
 ### Feature Extraction
 
 ```bash
-# in any-to-many VC task, we use all the above 3 speakers as the target speaker set.
+# In any-to-many VC task, we use all the above 3 speakers as the target speaker set.
 CUDA_VISIBLE_DEVICES=0 python preprocess.py --data_dir /path/to/dataset/ --save_dir /path/to/save_data/exp3-data-all
 ```
 
@@ -118,12 +118,12 @@ exp3-data-all/
 
 ### Train
 
-if you have GPU (one typical GPU is enough, nearly 1s/batch):
+If you have GPU (one typical GPU is enough, nearly 1s/batch):
 ```bash
 CUDA_VISIBLE_DEVICES=0 python train_to_many.py --model_dir ./exps/model_dir_to_many --test_dir ./exps/test_dir_to_many --data_dir /path/to/save_data/exp3-data-all
 ```
 
-if you have no GPU (nearly 5s/batch):
+If you have no GPU (nearly 5s/batch):
 
 ```bash
 python train_to_many.py --model_dir ./exps/model_dir_to_many --test_dir ./exps/test_dir_to_many --data_dir /path/to/save_data/exp3-data-all
@@ -131,7 +131,7 @@ python train_to_many.py --model_dir ./exps/model_dir_to_many --test_dir ./exps/t
 ### Inference
 
 ```bash
-# here for inference, we use 'mst-male' as the target speaker. you can change the tgt_spk argument to any of the above 3 speakers. 
+# Here for inference, we use 'mst-male' as the target speaker. you can change the tgt_spk argument to any of the above 3 speakers. 
 CUDA_VISIBLE_DEVICES=0 python inference_to_many.py --src_wav /path/to/source/*.wav --tgt_spk bzn/mst-female/mst-male --ckpt ./model_dir/bnf-vc-to-many-49.pt --save_dir ./test_dir/
 ```
 
