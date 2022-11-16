@@ -21,23 +21,20 @@ or you may need to setup your own environment depends on GPU and cuda you have.
 We recommend that you use pytorch 1.9.0 with the corresponding cuda version to avoid bug.
 ## Data Preparation
 1. Download bzn/mst-male/mst-female corpus from here http://10.103.10.113:8080/sub_dataset.tar
-2. Download pretrained ASR model from here http://10.103.10.113:8080/pretrained_model/final.pt
-3. Move final.pt to ./pretrained_model/asr_model
-4. You can find all the file mentioned above from https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/
-```
-If get 'Could not find a version for torch==1.9.0+cu111' , see https://jishuin.proginn.com/p/763bfbd5e54b.
-
-'pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html' will solve this problem.
-
-```
-
-Extract the dataset, and organize your data directories as follows:
+2. Extract the dataset, and organize your data directories as follows:
 ```bash
 dataset/
 ├── mst-female
 ├── mst-male
 ├── bzn
 ```
+3. Download pretrained ASR model from here http://10.103.10.113:8080/pretrained_model/final.pt
+4. Move final.pt to ./pretrained_model/asr_model
+
+Tips: You can also find all the file mentioned above from https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/
+
+
+
 
 ## Any-to-One Voice Conversion Model
 
@@ -46,6 +43,10 @@ dataset/
 ```bash
 
 CUDA_VISIBLE_DEVICES=0 python preprocess.py --data_dir /path/to/dataset/bzn --save_dir /path/to/save_data/bzn/
+
+If get 'Could not find a version for torch==1.9.0+cu111' , see https://jishuin.proginn.com/p/763bfbd5e54b.
+
+'pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html' will solve this problem.
 ```
 
 Your extracted features will be organized as follows:
