@@ -55,8 +55,8 @@ bzn/
 ├── mels
 │   ├── bzn_000001.npy
 │   ├── ...
-├── ppgs
-│   ├── bzn_000001.npy
+├── BNFs
+│   ├── bzn_000001.npy
 │   ├── ...
 ├── test_meta.csv
 └── train_meta.csv
@@ -112,7 +112,7 @@ exp3-data-all/
 ├── mels
 │   ├── bzn_000001.npy
 │   ├── ...
-├── ppgs
+├── BNFs
 │   ├── bzn_000001.npy
 │   ├── ...
 ├── test_meta.csv
