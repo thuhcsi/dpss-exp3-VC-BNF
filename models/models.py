@@ -134,7 +134,7 @@ class BLSTMToManyConversionModel(nn.Module):
                                    out_features=in_channels)
         self.emb_proj2 = nn.Linear(in_features=embd_dim,
                                    out_features=lstm_hidden * 2)
-        self.blstm1 = nn.LSTM(input_size=in_channels+embd_dim,
+        self.blstm1 = nn.LSTM(input_size=in_channels,
                               hidden_size=lstm_hidden,
                               bidirectional=True)
         self.blstm2 = nn.LSTM(input_size=lstm_hidden * 2,
