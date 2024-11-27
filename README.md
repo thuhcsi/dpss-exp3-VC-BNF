@@ -19,15 +19,15 @@ pip3 install -r dpss-exp3-VC-BNF/requirement_torch18.txt
 Tips: You can also setup your own environment depends on cuda you have.
 We recommend that you use pytorch 1.9.0 with the corresponding cuda version to avoid bug.
 ## Data Preparation
-1. Download bzn/mst-male/mst-female corpus from here https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/files/?p=%2Fsub_dataset.tar
-2. Extract the dataset, and organize your data directories as follows:
+1. Download bzn/mst-male/mst-female corpus from [here](https://cloud.tsinghua.edu.cn/f/c8f3614b438b4c94984e/)
+2. Extract the dataset (via `tar -xzvf sub_dataset.tar.gz`), and organize your data directories as follows:
 ```bash
 dataset/
 ├── mst-female
 ├── mst-male
 ├── bzn
 ```
-3. Download pretrained ASR model from here https://cloud.tsinghua.edu.cn/d/a30bef6b8d504e46bdb9/files/?p=%2Ffinal.pt
+3. Download pretrained ASR model from [here](https://cloud.tsinghua.edu.cn/f/6e02e07b74864e80ab2f/)
 4. Move final.pt to ./pretrained_model/asr_model
 
 
